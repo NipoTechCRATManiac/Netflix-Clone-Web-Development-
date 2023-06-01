@@ -1,0 +1,41 @@
+REFERENCES -
+1. CODE WITH HARRY
+2. CHATGPT3.5
+3. W3SCHOOLS
+
+CSS Grid 
+->GRID CONTAINER
+->GRID LINES
+->GRID CELL
+->GRID TRACK
+->GRID ITEM
+
+IDEA 
+-> there is a container and inside that container items are fitted depending on the size we want.
+-> This container looks like (n rows X n columns) basically like a table.
+->and inside this table we assign every cell , we can combine multiple cells for our needs.
+
+CODE
+HTML SIDE
+1. first make a container;
+-> <div class="container"></div>
+2. then add items or make item classes; 
+-> <div class="item"></div>
+3. it will look like this in the end 
+
+<div class="container">
+	<div class="item"></div>
+	<div class="item"></div>
+</div>
+
+CSS SIDE
+first activate both the classes 
+1.  .container{ }
+2. .item{ }
+3. in container box initialize display:grid; to tell css that we are using grid layout 
+4. grid-template-columns && grid-template-rows in container box to tell the css about our rows and columns inside the container box
+
+4.1.  grid-template-columns:repeat(n,1fr); grid-template-rows:repeat(n,1fr);
+
+5. row-gap && column-gap to tell css about gap between them .
+
